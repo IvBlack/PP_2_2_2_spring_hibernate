@@ -20,7 +20,7 @@ public class CarsController {
     //отдаем нужное кол-во авто в модель
     @GetMapping(value = "/cars")
     public String printCar(ModelMap model, @RequestParam(defaultValue = "5", value = "count") int amount) {
-        model.addAttribute("carsArray", service.showCars(amount));
+        model.addAttribute("carsArray", service.getCarsByCount(amount));
         return "cars";
     }
 }

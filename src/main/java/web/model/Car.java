@@ -39,11 +39,8 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "mark_id='" + mark_id + '\'' +
-                ", year=" + year +
-                ", color='" + color + '\'' +
-                '}';
+        return "Car{" + "mark_id='" + mark_id + '\'' + ", year=" + year +
+                ", color='" + color + '\'' + '}';
     }
 }
 

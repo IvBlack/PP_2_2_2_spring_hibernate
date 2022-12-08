@@ -23,9 +23,11 @@ public class CarService {
     }
 
     //сервис фильтрации числа авто
-    public List<Car> showCars(int amount) {
+    public List<Car> getCarsByCount(int amount) {
         if (amount < 5) {
-        return listOfCars.subList(0, amount);
-        } else { return listOfCars; }
+            return listOfCars.subList(0, amount);
+        } else { 
+            return listOfCars; 
+        }
     }
 }
